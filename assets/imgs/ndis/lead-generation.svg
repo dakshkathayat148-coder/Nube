@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4185F7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ED4235" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="funnel-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ED4235" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4185F7" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="420" rx="24" fill="url(#g2)"/>
+  <circle cx="80" cy="70" r="70" fill="#4185F7" opacity="0.04"/>
+  <circle cx="520" cy="370" r="50" fill="#ED4235" opacity="0.04"/>
+  <!-- Dashboard mockup card -->
+  <rect x="80" y="60" width="440" height="300" rx="20" fill="#fff" stroke="#e8e8ef" stroke-width="2"/>
+  <!-- Dashboard header -->
+  <rect x="80" y="60" width="440" height="50" rx="20" fill="#ED4235" opacity="0.9"/>
+  <rect x="80" y="90" width="440" height="20" fill="#ED4235" opacity="0.9"/>
+  <circle cx="110" cy="85" r="8" fill="#fff" opacity="0.3"/>
+  <rect x="125" y="80" width="80" height="10" rx="4" fill="#fff" opacity="0.5"/>
+  <rect x="430" y="80" width="70" height="10" rx="4" fill="#fff" opacity="0.3"/>
+  <!-- Lead conversion funnel -->
+  <!-- Top of funnel (wide) -->
+  <path d="M160 180 L200 140 L400 140 L440 180 Z" fill="#ED4235" opacity="0.06" stroke="#ED4235" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- People icons in top -->
+  <circle cx="220" cy="160" r="8" fill="#ED4235" opacity="0.3"/>
+  <circle cx="250" cy="160" r="8" fill="#ED4235" opacity="0.25"/>
+  <circle cx="280" cy="160" r="8" fill="#ED4235" opacity="0.2"/>
+  <circle cx="310" cy="160" r="8" fill="#ED4235" opacity="0.2"/>
+  <circle cx="340" cy="160" r="8" fill="#ED4235" opacity="0.25"/>
+  <circle cx="370" cy="160" r="8" fill="#ED4235" opacity="0.3"/>
+  <!-- Middle funnel -->
+  <path d="M200 190 L230 230 L370 230 L400 190" fill="#4185F7" opacity="0.06" stroke="#4185F7" stroke-width="2"/>
+  <circle cx="260" cy="210" r="8" fill="#4185F7" opacity="0.3"/>
+  <circle cx="300" cy="210" r="8" fill="#4185F7" opacity="0.25"/>
+  <circle cx="340" cy="210" r="8" fill="#4185F7" opacity="0.3"/>
+  <!-- Bottom of funnel (narrow) -->
+  <path d="M240 240 L270 280 L330 280 L360 240" fill="#F9BE05" opacity="0.08" stroke="#F9BE05" stroke-width="2"/>
+  <circle cx="300" cy="260" r="10" fill="#F9BE05" opacity="0.4"/>
+  <!-- Arrow down -->
+  <path d="M295 130 L300 125 L305 130" stroke="#ED4235" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M300 130 L300 140" stroke="#ED4235" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <!-- Label texts -->
+  <text x="300" y="188" text-anchor="middle" fill="#ED4235" font-size="9" font-weight="600" font-family="Arial" opacity="0.7">Visitors</text>
+  <text x="300" y="238" text-anchor="middle" fill="#4185F7" font-size="9" font-weight="600" font-family="Arial" opacity="0.7">Leads</text>
+  <text x="300" y="285" text-anchor="middle" fill="#F9BE05" font-size="9" font-weight="600" font-family="Arial" opacity="0.7">Clients</text>
+  <!-- Side metrics -->
+  <rect x="420" y="160" width="70" height="28" rx="14" fill="#ED4235" opacity="0.08"/>
+  <text x="425" y="172" fill="#ED4235" font-size="8" font-weight="600" font-family="Arial" opacity="0.7">2.4x</text>
+  <text x="425" y="182" fill="#999" font-size="7" font-family="Arial">conversion</text>
+  <rect x="420" y="210" width="70" height="28" rx="14" fill="#4185F7" opacity="0.08"/>
+  <text x="425" y="222" fill="#4185F7" font-size="8" font-weight="600" font-family="Arial" opacity="0.7">+85%</text>
+  <text x="425" y="232" fill="#999" font-size="7" font-family="Arial">lead gen</text>
+  <!-- Left decorative elements -->
+  <rect x="110" y="160" width="30" height="4" rx="2" fill="#ED4235" opacity="0.15"/>
+  <rect x="110" y="170" width="20" height="4" rx="2" fill="#ED4235" opacity="0.1"/>
+  <rect x="110" y="210" width="25" height="4" rx="2" fill="#4185F7" opacity="0.12"/>
+  <rect x="110" y="220" width="15" height="4" rx="2" fill="#4185F7" opacity="0.08"/>
+  <!-- Bottom dashboard bar -->
+  <rect x="110" y="320" width="80" height="6" rx="3" fill="#ED4235" opacity="0.15"/>
+  <rect x="200" y="320" width="120" height="6" rx="3" fill="#e0e0e0"/>
+  <rect x="200" y="320" width="60" height="6" rx="3" fill="#ED4235" opacity="0.5"/>
+  <rect x="400" y="320" width="60" height="6" rx="3" fill="#e0e0e0"/>
+  <rect x="400" y="320" width="40" height="6" rx="3" fill="#F9BE05" opacity="0.5"/>
+</svg>
