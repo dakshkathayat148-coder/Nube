@@ -18846,21 +18846,13 @@ input.footer-15__form-input:focus {
 .sec-5-home-11__eyebrow-dot,
 .sec-6-home-11__eyebrow-dot,
 .sec-7-home-11__eyebrow-dot,
-.sec-8-home-11__eyebrow-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--at-theme-primary);
-  flex-shrink: 0;
-}
 .sec-1-home-11__eyebrow-text,
 .sec-2-home-11__eyebrow-text,
 .sec-3-home-11__eyebrow-text,
 .sec-4-home-11__eyebrow-text,
 .sec-5-home-11__eyebrow-text,
 .sec-6-home-11__eyebrow-text,
-.sec-7-home-11__eyebrow-text,
-.sec-8-home-11__eyebrow-text {
+.sec-7-home-11__eyebrow-text {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -19781,149 +19773,6 @@ input.footer-15__form-input:focus {
 /*------------------------------------------------------------------
   Section 8 — Call to Action
 ------------------------------------------------------------------*/
-.sec-8-home-11 {
-  position: relative;
-  overflow: hidden;
-  background-color: var(--at-neutral-950);
-  color: var(--at-common-white);
-}
-.sec-8-home-11__bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-.sec-8-home-11__bg-wrap {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.sec-8-home-11__bg-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-.sec-8-home-11__bg-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 15, 15, 0.82);
-}
-.sec-8-home-11__inner {
-  position: relative;
-  z-index: 1;
-  padding: clamp(80px, 10vw, 140px) 0;
-  padding-bottom: 0;
-}
-.sec-8-home-11__type-wrap {
-  overflow: hidden;
-}
-.sec-8-home-11__big-line {
-  font-size: clamp(48px, 10vw, 140px);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.08);
-  white-space: nowrap;
-}
-.sec-8-home-11__img-pill {
-  display: inline-block;
-  vertical-align: middle;
-  height: 0.85em;
-  overflow: hidden;
-  border-radius: 16px;
-  margin: 0 0.15em;
-  position: relative;
-  top: -0.04em;
-}
-.sec-8-home-11__img-pill img {
-  height: 100%;
-  width: auto;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.sec-8-home-11__type-wrap:nth-child(1) .sec-8-home-11__img-pill:nth-of-type(1) {
-  transform: rotate(-5deg);
-}
-.sec-8-home-11__type-wrap:nth-child(1) .sec-8-home-11__img-pill:nth-of-type(2) {
-  transform: rotate(6deg);
-}
-.sec-8-home-11__type-wrap:nth-child(2) .sec-8-home-11__img-pill:nth-of-type(1) {
-  transform: rotate(7deg);
-}
-.sec-8-home-11__type-wrap:nth-child(2) .sec-8-home-11__img-pill:nth-of-type(2) {
-  transform: rotate(-4deg);
-}
-.sec-8-home-11__type-wrap:nth-child(3) .sec-8-home-11__img-pill:nth-of-type(1) {
-  transform: rotate(-6deg);
-}
-.sec-8-home-11__type-wrap:nth-child(3) .sec-8-home-11__img-pill:nth-of-type(2) {
-  transform: rotate(5deg);
-}
-.sec-8-home-11__cta-block {
-  padding: clamp(48px, 8vw, 120px) clamp(20px, 5.5vw, 96px);
-}
-.sec-8-home-11__cta-heading {
-  font-size: clamp(40px, 7vw, 104px);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  color: var(--at-common-white);
-  margin-bottom: 0;
-}
-.sec-8-home-11__cta-sub {
-  font-size: clamp(15px, 1.2vw, 18px);
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-.sec-8-home-11__btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 16px 32px;
-  background: var(--at-theme-primary);
-  color: var(--at-common-white);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  border: 1px solid var(--at-theme-primary);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-.sec-8-home-11__btn-primary:hover {
-  background: transparent;
-  color: var(--at-theme-primary);
-}
-.sec-8-home-11__btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  padding: 16px 32px;
-  background: transparent;
-  color: var(--at-common-white);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: border-color 0.3s ease, color 0.3s ease;
-}
-.sec-8-home-11__btn-secondary:hover {
-  border-color: var(--at-common-white);
-  color: var(--at-common-white);
-}
-.sec-8-home-11__email {
-  font-size: clamp(13px, 1vw, 15px);
-  color: rgba(255, 255, 255, 0.4);
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: color 0.3s ease;
-}
-.sec-8-home-11__email:hover {
-  color: var(--at-common-white);
-}
 
 /* Home 12 / Section 1 — Hero (Pure Design. Potent Storytelling) */
 .sec-1-home-12 {
@@ -37530,5 +37379,40 @@ html[data-bs-theme=dark] .our-journey-card {
 [data-bs-theme=dark] .card-award:hover .card-award-title,
 [data-bs-theme=dark] .card-award:hover .card-award-web-excellence {
   color: var(--nv-red) !important;
+}
+
+/* ============ GLOBAL RESPONSIVE FIXES ============ */
+@media (max-width: 1199px) {
+  .sec-5-home-7 { padding: 60px 48px !important; }
+  .sec-4-home-3 { padding: 60px 48px 40px !important; }
+}
+@media (max-width: 767px) {
+  .sec-5-home-7 { padding: 40px 20px !important; }
+  .sec-5-home-7 .client-box {
+    height: 44px !important;
+    padding: 0 18px !important;
+    font-size: 0.85rem !important;
+    white-space: nowrap;
+  }
+  .client-capsule-wrapper {
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+  .sec-4-home-3 { padding: 40px 20px !important; }
+  .sec-4-home-3 .navigation-sec4home3 .item .content { gap: 8px; }
+  .home-2-section-7 .card-award-link { flex-wrap: wrap !important; gap: 4px !important; }
+  .home-5-section-7 { padding-left: 20px !important; padding-right: 20px !important; }
+  .home-5-section-7 .row.g-4 > [class*="col-"] { padding-bottom: 16px; }
+  .home-2-section-7 { padding-left: 20px !important; padding-right: 20px !important; }
+  .footer-15__tags { flex-wrap: wrap !important; }
+}
+@media (max-width: 574px) {
+  .sec-5-home-7 { padding: 30px 14px !important; }
+  .sec-5-home-7 .client-box {
+    height: 38px !important;
+    padding: 0 12px !important;
+    font-size: 0.75rem !important;
+  }
+  .sec-4-home-3 { padding: 30px 14px !important; }
 }
 /*# sourceMappingURL=main.css.map */
