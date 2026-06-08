@@ -383,6 +383,77 @@
       .at-megamenu.wide-megamenu .at-megamenu-box ul li a { font-size: 13px !important; padding: 8px 10px 8px 28px !important; }
     }
     </style>
+    <!-- Responsive overrides -->
+    <style>
+      .sec-1-home-4__headline { font-size: clamp(16px, 2.2vw, 28px) !important; line-height: 1.3 !important; }
+      @media (max-width: 1199.98px) {
+        .sec-2-home-13 { padding: 40px 40px !important; }
+        .sec-5-home-7 { padding: 40px 40px !important; }
+        .sec-5-home-7 [style*="margin-top:-180px"] { margin-top: -100px !important; }
+      }
+      @media (max-width: 991.98px) {
+        .sec-2-home-13 { padding: 32px 24px !important; }
+        .sec-2-home-13__top { flex-direction: column !important; gap: 32px !important; }
+        .sec-2-home-13__grid { flex-direction: column !important; }
+        .sec-2-home-13__col--tall { margin-left: 0 !important; }
+        .sec-2-home-13__col { margin-left: 0 !important; margin-right: 0 !important; }
+        .sec-5-home-7 { padding: 32px 20px !important; }
+        .sec-5-home-7 [style*="margin-top:-180px"] { margin-top: 0 !important; }
+        .sec-1-home-4 .row.align-items-start > .col-lg-5,
+        .sec-1-home-4 .row.align-items-start > .col-lg-6 { margin-top: 24px; }
+        .sec-1-home-4 .d-flex.gap-3 { flex-wrap: wrap; }
+        .sec-1-home-4 .d-flex.gap-3 > * { flex: 1 1 calc(50% - 12px); min-width: 0; }
+        .footer-15__grid { flex-direction: column; gap: 40px !important; }
+        .footer-15__panel--contact > div:first-child { grid-template-columns: 1fr !important; gap: 24px !important; }
+        .at-header-area .col-xxl-8 { display: none !important; }
+        .at-header-area .col-xxl-2.col-lg-2.col-6:last-child { display: flex !important; justify-content: flex-end; }
+        .sec-1-home-4__brand { font-size: clamp(28px, 5vw, 48px) !important; }
+        .topbar .col-12 > div { flex-direction: column; gap: 4px; align-items: flex-start !important; }
+        .sec-2-home-13__left { gap: 24px !important; }
+      }
+      @media (max-width: 767.98px) {
+        .sec-2-home-13 { padding: 24px 16px !important; }
+        .sec-2-home-13__top { gap: 24px !important; }
+        .sec-2-home-13__right { gap: 20px !important; }
+        .sec-2-home-13__grid { gap: 12px !important; }
+        .sec-2-home-13__title { font-size: clamp(20px, 5vw, 28px) !important; }
+        .sec-2-home-13__intro-text { font-size: 15px !important; }
+        .sec-5-home-7 { padding: 24px 16px !important; }
+        .sec-5-home-7 h6 { font-size: clamp(18px, 5vw, 24px) !important; }
+        .sec-1-home-4 .d-flex.gap-3 > * { flex: 1 1 100%; }
+        .sec-1-home-4 .d-flex.gap-3 img { width: 100% !important; height: auto !important; }
+        .sec-1-home-4 .col-lg-4 .d-flex.flex-wrap.gap-2 { gap: 8px !important; }
+        .sec-1-home-4 .col-lg-4 .d-flex.flex-wrap.gap-2 > span { font-size: 13px !important; padding: 4px 12px !important; }
+        .sec-2-home-4 .row.g-3 > .col-md-6 { margin-bottom: 16px; }
+        .at-service-card { min-height: 280px; }
+        .sec-3-home-11__stats-bar > .col-6 { margin-bottom: 20px; }
+        .sec-3-home-11__stats-bar .odometer { font-size: 28px !important; }
+        .home-5-section-7 .row.g-3 > .col-md-6 { margin-bottom: 16px; }
+        .home-2-section-7 .card-award { padding: 16px !important; }
+        .at-search-form-toggle .row.mb-60 > .col-12 > div:first-child { flex-wrap: wrap; gap: 16px; }
+        .at-search-form-toggle .row.mb-60 > .col-12 > div:first-child img { width: 100% !important; }
+        .footer-15__panel--contact > div:first-child { gap: 16px !important; }
+        .footer-15__legal { flex-direction: column; gap: 12px; text-align: center; }
+      }
+      @media (max-width: 575.98px) {
+        .sec-2-home-13 { padding: 20px 12px !important; }
+        .sec-2-home-13__label-text { font-size: 16px !important; }
+        .sec-2-home-13__team { gap: -8px !important; }
+        .sec-2-home-13__team-avatar img { width: 36px !important; height: 36px !important; }
+        .sec-5-home-7 { padding: 20px 12px !important; }
+        .sec-5-home-7 .client-box { height: 44px !important; padding: 0 20px !important; font-size: 0.85rem !important; }
+        .sec-1-home-4-wrap { padding-top: 80px !important; }
+        .sec-1-home-4 .rounded-5 { border-radius: 16px !important; margin-left: 8px !important; margin-right: 8px !important; }
+        .at-btn { font-size: 14px !important; padding: 10px 20px !important; }
+        .sec-1-home-4__btns { flex-wrap: nowrap !important; }
+        .sec-1-home-4__btns .at-btn { font-size: 12px !important; padding: 8px 12px !important; white-space: nowrap !important; }
+        .crm-tab-btn { padding: 10px 16px !important; }
+        .crm-tab-btn span:last-child { font-size: 14px !important; }
+        .topbar { display: none !important; }
+        .at-header-area { margin-left: 8px !important; margin-right: 8px !important; }
+        .at-header-area img { max-width: 80px !important; }
+      }
+    </style>
 
 </head>
 <body class="at-magic-cursor">
