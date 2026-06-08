@@ -33,8 +33,7 @@
 29. at-title-text
 30. panel pin section (mg-portfolio-pin)
 31. panel pin section (at-header-pin)
-32. section-fix (pin section-title + stacking cards)
-33. section-title-pin
+32. section-title-pin
 34. data-countdown
 35. at-item-anime marque
 36. at-pricing-area
@@ -1535,97 +1534,6 @@
             }
         });
     }
-    ////////////////////////////////////////////////////
-    // 32. section-fix (pin section-title + stacking cards)
-    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-        function buildSectionFixStack(sectionFix) {
-            const sectionTitlePin = sectionFix.querySelector('.section-title-pin');
-            const scrollSectionEl = sectionFix.querySelector('.scroll-section.vertical-section');
-            if (!scrollSectionEl || !sectionTitlePin) return;
-            const wrapper = scrollSectionEl.querySelector('.wrapper');
-            if (!wrapper) return;
-            const items = wrapper.querySelectorAll('.item');
-            if (!items.length) return;
-
-            items.forEach((item, index) => {
-                if (index !== 0) gsap.set(item, { yPercent: 100 });
-            });
-
-            const scrollDistance = items.length * 50;
-            const navList = sectionFix.querySelector('.navigation-active-item');
-            const navItems = navList ? navList.querySelectorAll('li .item') : [];
-
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: sectionFix,
-                    pin: true,
-                    start: 'top top',
-                    end: () => `+=${scrollDistance}%`,
-                    scrub: 1,
-                    invalidateOnRefresh: true,
-                    onUpdate: (self) => {
-                        const progress = Math.min(Math.max(self.progress, 0), 0.9999);
-                        const index = Math.min(Math.floor(progress * items.length), items.length - 1);
-                        items.forEach((el, i) => el.classList.toggle('active', i === index));
-                        navItems.forEach((el, i) => el.classList.toggle('active', i === index));
-                    },
-                },
-                defaults: { ease: 'none', duration: 1 },
-            });
-
-            items.forEach((item, index) => {
-                tl.to(item, { scale: 0.9 });
-                if (items[index + 1]) {
-                    tl.to(items[index + 1], { yPercent: 0 }, '<');
-                }
-            });
-
-            function updateActiveByProgress() {
-                if (tl.scrollTrigger && tl.scrollTrigger.isActive()) {
-                    const progress = Math.min(Math.max(tl.scrollTrigger.progress, 0), 0.9999);
-                    const index = Math.min(Math.floor(progress * items.length), items.length - 1);
-                    items.forEach((el, i) => el.classList.toggle('active', i === index));
-                    navItems.forEach((el, i) => el.classList.toggle('active', i === index));
-                }
-            }
-            ScrollTrigger.addEventListener('scroll', updateActiveByProgress);
-        }
-
-        function initSectionFix() {
-            const sectionFixList = document.querySelectorAll('.section-fix');
-            if (!sectionFixList.length) return;
-
-            const mm = gsap.matchMedia();
-
-            // Desktop: all section-fix rows (including Home 11 sec 6 stack).
-            mm.add('(min-width: 992px)', () => {
-                const ctx = gsap.context(() => {
-                    sectionFixList.forEach((sectionFix) => buildSectionFixStack(sectionFix));
-                });
-                return () => ctx.revert();
-            });
-
-            // Mobile / tablet: skip Home 11 process stack (needs CSS reset — see _home-11.scss).
-            mm.add('(max-width: 991px)', () => {
-                const ctx = gsap.context(() => {
-                    sectionFixList.forEach((sectionFix) => {
-                        if (sectionFix.classList.contains('sec-6-home-11__layout')) return;
-                        buildSectionFixStack(sectionFix);
-                    });
-                });
-                return () => ctx.revert();
-            });
-        }
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initSectionFix);
-        } else {
-            initSectionFix();
-        }
-        window.addEventListener('load', function () {
-            if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
-        });
-    }
-
     ////////////////////////////////////////////////////
     // 33. section-title-pin
     if (typeof gsap !== 'undefined') {

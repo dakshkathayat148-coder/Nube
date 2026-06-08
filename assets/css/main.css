@@ -740,32 +740,6 @@ li,
   transition: all 0.3s ease;
 }
 
-.navigation-sec4home3 .item {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--at-neutral-100);
-  transition: all 0.3s ease;
-}
-.navigation-sec4home3 .item .content span {
-  flex: 0 0 60px;
-}
-.navigation-sec4home3 .item .content .h6 {
-  flex: 1;
-}
-.navigation-sec4home3 .item .content svg {
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.navigation-sec4home3 .item.active {
-  background-color: var(--at-neutral-100);
-}
-.navigation-sec4home3 .item.active .content {
-  margin: 0 16px;
-  transition: all 0.3s ease;
-}
-.navigation-sec4home3 .item.active svg {
-  opacity: 1;
-}
-
 .border-white\/01 {
   border-right: 1px solid var(--at-neutral-100);
 }
@@ -37118,17 +37092,6 @@ body.at-magic-cursor #magic-cursor {
 [data-bs-theme=dark] p {
   color: #fff !important;
 }
-/* CRM navigation titles white, numbers red in dark mode */
-[data-bs-theme=dark] .navigation-sec4home3 li h4 {
-  color: #fff !important;
-}
-[data-bs-theme=dark] .navigation-sec4home3 li .neutral-500 {
-  color: var(--nv-red, #ED4235) !important;
-}
-/* CRM right card description text black in dark mode */
-[data-bs-theme=dark] .sec-4-home-3 .neutral-950 {
-  color: #000 !important;
-}
 /* Section eyebrows/labels blue in dark mode (all pages except home) */
 [data-bs-theme=dark] [class*="__eyebrow"],
 [data-bs-theme=dark] [class*="__eyebrow-text"],
@@ -37384,7 +37347,6 @@ html[data-bs-theme=dark] .our-journey-card {
 /* ============ GLOBAL RESPONSIVE FIXES ============ */
 @media (max-width: 1199px) {
   .sec-5-home-7 { padding: 60px 48px !important; }
-  .sec-4-home-3 { padding: 60px 48px 40px !important; }
 }
 @media (max-width: 767px) {
   .sec-5-home-7 { padding: 40px 20px !important; }
@@ -37398,8 +37360,6 @@ html[data-bs-theme=dark] .our-journey-card {
     height: auto !important;
     margin-top: 0 !important;
   }
-  .sec-4-home-3 { padding: 40px 20px !important; }
-  .sec-4-home-3 .navigation-sec4home3 .item .content { gap: 8px; }
   .home-2-section-7 .card-award-link { flex-wrap: wrap !important; gap: 4px !important; }
   .home-5-section-7 { padding-left: 20px !important; padding-right: 20px !important; }
   .home-5-section-7 .row.g-4 > [class*="col-"] { padding-bottom: 16px; }
@@ -37413,6 +37373,41 @@ html[data-bs-theme=dark] .our-journey-card {
     padding: 0 12px !important;
     font-size: 0.75rem !important;
   }
-  .sec-4-home-3 { padding: 30px 14px !important; }
+}
+/* Agent Card Grid */
+.agent-card:hover {
+  background: rgba(255,255,255,0.1) !important;
+  border-color: var(--nv-blue) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(65,133,247,0.15);
+}
+.agent-card:hover h4 {
+  color: var(--nv-blue) !important;
+}
+/* CRM Tab Section */
+.crm-tab-btn:hover {
+  background: rgba(65,133,247,0.12) !important;
+  border-color: rgba(65,133,247,0.2) !important;
+  color: #fff !important;
+}
+.crm-tab-btn:hover span:first-child {
+  background: var(--nv-blue) !important;
+  color: #fff !important;
+}
+.crm-tab-panel {
+  animation: crmFadeIn 0.35s ease forwards;
+}
+@keyframes crmFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 991px) {
+  #crmTabSection .col-lg-4 .d-flex { flex-direction: row !important; flex-wrap: wrap; }
+  #crmTabSection .col-lg-4 .crm-tab-btn { flex: 1 1 calc(50% - 4px); min-width:0; font-size:0.8rem; white-space:nowrap; }
+  #crmTabSection .col-lg-4 .crm-tab-btn span:first-child { width:28px;height:28px;font-size:0.7rem;flex-shrink:0; }
+}
+@media (max-width: 767px) {
+  #crmTabSection .col-lg-4 .crm-tab-btn { flex:1 1 100%; }
+  #crmTabSection .col-md-7.p-4.p-xl-5 { padding:1.5rem !important; }
 }
 /*# sourceMappingURL=main.css.map */

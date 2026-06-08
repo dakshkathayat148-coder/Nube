@@ -855,12 +855,12 @@
 <style>
   .sec-6-home-11__step-media { max-height:240px; aspect-ratio:auto; } .sec-6-home-11__step-media img { object-fit:cover; } .sec-6-home-11__step { background:#f5f5f5; padding:25px; border-radius:12px; border:none !important; } .sec-6-home-11__step.item { min-height:0 !important; } .sec-6-home-11__step .at-btn:hover { background:#000 !important; }
 </style>
-<section class="sec-6-home-11 pt-120 pb-60" id="home-11-sec-6" aria-label="IT Services" style="background:#fff;">
+<section class="sec-6-home-11 pt-120 pb-60 section-fix" id="home-11-sec-6" aria-label="IT Services" style="background:#fff;">
     <div class="sec-6-home-11__container" style="padding-top:0;padding-bottom:0;">
         <!-- Sticky heading column -->
-        <div class="sec-6-home-11__layout row g-5 g-xl-6 section-fix">
+            <div class="sec-6-home-11__layout row g-5 g-xl-6 align-items-start">
             <div class="col-lg-5">
-                <div class="sec-6-home-11__title-block section-title-pin">
+                <div class="sec-6-home-11__title-block">
                     <div class="sec-6-home-11__eyebrow d-inline-flex align-items-center gap-2 at_fade_anim" data-delay=".05">
                         <span class="sec-6-home-11__eyebrow-dot" aria-hidden="true"></span>
                         <span class="sec-6-home-11__eyebrow-text text-uppercase" style="color:var(--nv-red);font-weight:600;letter-spacing:0.12em;">IT Support Solutions</span>
@@ -873,7 +873,7 @@
             </div>
             <!-- Steps column (scroll stacking) -->
             <div class="col-lg-7">
-                <div class="scroll-section vertical-section section scroll-active-item sec-6-home-11__scroll-stack">
+                <div class="scroll-section vertical-section section scroll-active-item sec-6-home-11__scroll-stack" data-scroll-speed="80">
                     <div class="wrapper">
                         <ol class="sec-6-home-11__steps list list-unstyled mb-0" aria-label="IT services">
                             <li class="sec-6-home-11__step item at_fade_anim" data-delay=".1">
@@ -984,7 +984,7 @@
                              <li class="sec-6-home-11__step item at_fade_anim" data-delay=".26">
                                 <div class="sec-6-home-11__step-inner">
                                     <div class="sec-6-home-11__step-head d-flex align-items-center gap-4">
-                                        <span class="sec-6-home-11__step-num" aria-label="Step 9" style="font-size:32px;font-weight:700;color:var(--nv-red);">09</span>
+                                        <span class="sec-6-home-11__step-num" aria-label="Step 8" style="font-size:32px;font-weight:700;color:var(--nv-red);">08</span>
                                         <h3 class="sec-6-home-11__step-title mb-0">AV Setup</h3>
                                     </div>
                                     <p class="sec-6-home-11__step-body mt-3 mb-0">
@@ -1003,7 +1003,113 @@
         </div>
     </div>
 </section>
+
+
             </main>
+            <!-- REMOVED SECTIONS BELOW -->
+            <div class="d-none"><section style="background:#f8f8f8;" aria-label="How We Work - removed">
+
+  <!-- Section heading — above the scroll stack, NO section-fix ancestor -->
+  <div class="container" style="padding-top:80px;padding-bottom:48px;">
+    <div class="row">
+      <div class="col-lg-8 col-xl-7">
+        <div class="d-inline-flex align-items-center gap-2 mb-3 at_fade_anim" data-delay=".05">
+          <span class="sec-6-home-11__eyebrow-dot" aria-hidden="true"></span>
+          <span class="text-uppercase fw-600" style="color:var(--nv-red);font-size:13px;letter-spacing:0.12em;">How We Work</span>
+        </div>
+        <h2 class="reveal-text mb-0" style="font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#1D1D1D;line-height:1.15;">A process built<br>for lasting results.</h2>
+        <p class="mt-4 at_fade_anim" data-delay=".2" style="font-size:16px;line-height:1.7;color:#555;max-width:520px;">From first consultation to ongoing support, our four-stage approach keeps every IT engagement focused, efficient, and tailored to your business.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP scroll-stack: NOT inside section-fix so GSAP initialises it -->
+  <div class="sec-6-home-11__scroll-stack scroll-section vertical-section position-relative" data-scroll-speed="60">
+    <div class="wrapper">
+
+      <!-- Step 01 -->
+      <div class="item sec-6-home-11__step" style="display:flex;align-items:center;">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="sec-6-home-11__step-head d-flex align-items-center gap-4 mb-4">
+                <span class="sec-6-home-11__step-num">01</span>
+                <h3 class="sec-6-home-11__step-title mb-0">Consult</h3>
+              </div>
+              <p class="sec-6-home-11__step-body">We sit down with your team to understand your current IT environment, pain points, and business goals. No assumptions — just honest conversation about where you are and where you want to be.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="rounded-4 overflow-hidden sec-6-home-11__step-media">
+                <img style="height:380px;width:100%;object-fit:cover;" src="assets/imgs/pages/About-us-section.jpg" alt="Consult" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="item sec-6-home-11__step" style="display:flex;align-items:center;">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="sec-6-home-11__step-head d-flex align-items-center gap-4 mb-4">
+                <span class="sec-6-home-11__step-num">02</span>
+                <h3 class="sec-6-home-11__step-title mb-0">Plan</h3>
+              </div>
+              <p class="sec-6-home-11__step-body">We design a clear IT strategy and roadmap covering infrastructure, security, communications, and support — all tailored to your budget, timeline, and growth targets.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="rounded-4 overflow-hidden sec-6-home-11__step-media">
+                <img style="height:380px;width:100%;object-fit:cover;" src="assets/imgs/pages/IT-project.jpg" alt="Plan" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="item sec-6-home-11__step" style="display:flex;align-items:center;">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="sec-6-home-11__step-head d-flex align-items-center gap-4 mb-4">
+                <span class="sec-6-home-11__step-num">03</span>
+                <h3 class="sec-6-home-11__step-title mb-0">Implement</h3>
+              </div>
+              <p class="sec-6-home-11__step-body">Our certified engineers deploy your solutions with precision — handling setup, configuration, data migration, and integration while keeping disruption to your daily operations to an absolute minimum.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="rounded-4 overflow-hidden sec-6-home-11__step-media">
+                <img style="height:380px;width:100%;object-fit:cover;" src="assets/imgs/pages/it projects.jpg" alt="Implement" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="item sec-6-home-11__step" style="display:flex;align-items:center;">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="sec-6-home-11__step-head d-flex align-items-center gap-4 mb-4">
+                <span class="sec-6-home-11__step-num">04</span>
+                <h3 class="sec-6-home-11__step-title mb-0">Support</h3>
+              </div>
+              <p class="sec-6-home-11__step-body">We stay with you long after go-live. Proactive monitoring, regular maintenance, and 24/7 help desk access ensure your IT keeps running at peak performance as your business grows.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="rounded-4 overflow-hidden sec-6-home-11__step-media">
+                <img style="height:380px;width:100%;object-fit:cover;" src="assets/imgs/pages/IT Support.JPG" alt="Support" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section></div><!-- /d-none -->
             <!-- prettier-ignore -->
             <style>.footer-15__brand-mark { width: auto; } footer.footer-15 { padding: 0 8px 20px 5px; }</style>
             <!-- Footer 15 (Nubevest) -->
@@ -1110,6 +1216,39 @@
     <script src="assets/js/matter.js"></script>
     <script src="assets/js/throwable.js"></script>
     <script src="assets/js/cursor-trail.js"></script>
+    <script>
+    (function() {
+        if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+        var section = document.querySelector('#home-11-sec-6');
+        if (!section) return;
+        var scrollSection = section.querySelector('.scroll-section');
+        var wrapper = scrollSection && scrollSection.querySelector('.wrapper');
+        var items = wrapper && wrapper.querySelectorAll('.item');
+        if (!items || !items.length) return;
+        items.forEach(function(item, index) {
+            gsap.set(item, { zIndex: index });
+            if (index !== 0) gsap.set(item, { yPercent: 100 });
+        });
+        var speed = +(scrollSection.dataset.scrollSpeed || 50);
+        var endPx = items.length * speed * 0.01 * scrollSection.offsetHeight;
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+                pin: true,
+                start: 'top top',
+                end: '+=' + endPx,
+                scrub: 1,
+                invalidateOnRefresh: true,
+            },
+            defaults: { ease: 'none' },
+        });
+        var last = items.length - 1;
+        items.forEach(function(item, index) {
+            if (index !== last) tl.to(item, { scale: 0.9 });
+            if (index < last) tl.to(items[index + 1], { yPercent: 0 }, '<');
+        });
+    })();
+    </script>
 </body>
 <!-- Mirrored from orisa-html-demo.pages.dev/index-10 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 May 2026 08:37:11 GMT -->
 </html>
