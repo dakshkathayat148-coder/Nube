@@ -17,11 +17,12 @@ body {
   overflow-wrap: anywhere;
 }
 
-.sec-1-services .fz-font-lg span[style*="display:block"] {
+.sec-1-services .fz-font-lg.reveal-text span[style*="display:block"],
+.sec-1-services .fz-font-lg.reveal-text span[style*="display: block"] {
   display: inline !important;
 }
 
-.sec-1-services .fz-font-lg span[style*="display:block"]:not(:last-child)::after {
+.sec-1-services .fz-font-lg.reveal-text span + span::before {
   content: " ";
 }
 
