@@ -73,7 +73,7 @@ body {
 
 @media (max-width: 767.98px) {
   .sec-1-services {
-    padding-top: 120px !important;
+    padding-top: 140px !important;
   }
 
   .sec-1-services .row {
@@ -81,7 +81,7 @@ body {
   }
 
   .sec-1-services .col-xxl-6.col-lg-7 {
-    padding-top: 0 !important;
+    padding-top: 20px !important;
   }
 
   .sec-1-services .section-title.text-nowrap {
@@ -193,7 +193,7 @@ body {
 
 @media (max-width: 575.98px) {
   .sec-1-services {
-    padding-top: 108px !important;
+    padding-top: 132px !important;
   }
 
   .sec-1-services .section-title.text-nowrap {
