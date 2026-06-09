@@ -151,6 +151,19 @@
   .card-home-12-service__num-line { background-color: var(--nv-red) !important; }
   .card-home-12-service { background-color: #f8f9fc !important; }
   .card-home-12-service:hover .card-home-12-service__title { color: var(--nv-red) !important; }
+  .ndis-service-grid.sec-3-home-12__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  @media (max-width: 1199.98px) {
+    .ndis-service-grid.sec-3-home-12__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .ndis-service-grid.sec-3-home-12__grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
   .sec-5-home-7 .client-box--b4 { border-color: #ED4235 !important; }
   /* Our CRM section brand colors */
   .sec-4-home-3 .at-btn.common-black { color: var(--nv-blue) !important; }
@@ -1109,7 +1122,7 @@
                     <h2 class="sec-3-home-12__title reveal-text mb-0" style="font-size:clamp(1.3rem,2.5vw,2rem);font-weight:700;">NDIS Service Offerings</h2>
                 </div>
             </header>
-            <div class="sec-3-home-12__grid">
+            <div class="sec-3-home-12__grid ndis-service-grid">
                 <div class="card-home-12-service at_fade_anim" data-fade-from="bottom" data-delay="0.05">
                     <div class="card-home-12-service__top">
                         <div class="card-home-12-service__num-wrap">
