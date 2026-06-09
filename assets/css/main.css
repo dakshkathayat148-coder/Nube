@@ -20538,7 +20538,7 @@ input.footer-15__form-input:focus {
 /* ── Services grid ──────────────────────────────── */
 .sec-3-home-12__grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   max-width: 1280px;
   margin-inline: auto;
@@ -20705,7 +20705,7 @@ input.footer-15__form-input:focus {
     max-width: 320px;
   }
   .sec-3-home-12__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .card-home-12-service {
     padding: 24px;
@@ -37483,5 +37483,94 @@ html[data-bs-theme=dark] .our-journey-card {
 @media (max-width: 767px) {
   #crmTabSection .col-lg-4 .crm-tab-btn { flex:1 1 100%; }
   #crmTabSection .col-md-7.p-4.p-xl-5 { padding:1.5rem !important; }
+}
+
+/* Unified Footer 15 responsiveness */
+.footer-15 {
+  padding: 56px 12px 22px 12px !important;
+}
+
+.footer-15__grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) !important;
+  gap: 18px !important;
+}
+
+.footer-15__panel--brand,
+.footer-15__panel--contact {
+  padding: 22px !important;
+}
+
+.footer-15__tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+.footer-15__contact-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr) !important;
+  gap: 24px !important;
+}
+
+@media (max-width: 991.98px) {
+  .footer-15 {
+    padding: 44px 10px 20px 10px !important;
+  }
+
+  .footer-15__grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .footer-15__panel--brand,
+  .footer-15__panel--contact {
+    padding: 18px !important;
+  }
+
+  .footer-15__contact-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .footer-15__contact-row > div:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-15 {
+    padding: 34px 8px 16px 8px !important;
+  }
+
+  .footer-15__panel--brand,
+  .footer-15__panel--contact {
+    padding: 14px !important;
+  }
+
+  .footer-15__contact-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .footer-15__contact-row > div:last-child {
+    grid-column: auto;
+  }
+
+  .footer-15__legal {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  .footer-15__legal-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .footer-15__contact-line {
+    font-size: 15px !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
