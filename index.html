@@ -462,7 +462,7 @@
         .client-capsule-wrapper [data-t-throwable-el] { position: static !important; left: auto !important; top: auto !important; transform: none !important; display: block !important; width: auto !important; margin: 0 !important; }
         .client-capsule-wrapper [data-t-throwable-el] .client-box { transform: none !important; width: 100% !important; max-width: 100% !important; height: auto !important; min-height: 40px !important; padding: 10px 10px !important; white-space: normal !important; text-align: center !important; line-height: 1.2 !important; }
         .sec-5-home-7, .client-capsule-wrapper, .client-capsule-wrapper-box { touch-action: pan-y !important; }
-        .client-capsule-wrapper [data-t-throwable-el], .client-capsule-wrapper [data-t-throwable-el] .client-box { touch-action: pan-y !important; pointer-events: none !important; }
+        .client-capsule-wrapper [data-t-throwable-el], .client-capsule-wrapper [data-t-throwable-el] .client-box { touch-action: pan-y !important; pointer-events: auto !important; }
         .sec-5-home-7 { padding: 20px 12px !important; }
         .sec-5-home-7 .client-box { height: 44px !important; padding: 0 20px !important; font-size: 0.85rem !important; }
         .sec-1-home-4-wrap { padding: 70px 0 20px !important; }
@@ -2178,6 +2178,27 @@
     <script src="assets/js/matter.js"></script>
     <script src="assets/js/throwable.js"></script>
     <script src="assets/js/cursor-trail.js"></script>
+    <script>
+      (function () {
+        function disableThrowableOnMobile() {
+          if (window.innerWidth > 575.98) return;
+          var scene = document.querySelector('.sec-5-home-7 [data-t-throwable-scene]');
+          if (!scene || !window.jQuery) return;
+          var instance = window.jQuery.data(scene, 'plugin_tThrowable');
+          if (instance && typeof instance.destroy === 'function') {
+            instance.destroy();
+          }
+          scene.style.pointerEvents = 'auto';
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', disableThrowableOnMobile);
+        } else {
+          disableThrowableOnMobile();
+        }
+        window.addEventListener('resize', disableThrowableOnMobile);
+      })();
+    </script>
 </body>
 <!-- Mirrored from orisa-html-demo.pages.dev/index-10 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 May 2026 08:37:11 GMT -->
 </html>
