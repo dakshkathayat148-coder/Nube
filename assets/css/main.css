@@ -20534,7 +20534,7 @@ input.footer-15__form-input:focus {
 /* ── Services grid ──────────────────────────────── */
 .sec-3-home-12__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
   max-width: 1280px;
   margin-inline: auto;
@@ -20701,7 +20701,7 @@ input.footer-15__form-input:focus {
     max-width: 320px;
   }
   .sec-3-home-12__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
   .card-home-12-service {
     padding: 24px;
@@ -20727,7 +20727,7 @@ input.footer-15__form-input:focus {
     max-width: 100%;
   }
   .sec-3-home-12__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 16px;
   }
   .card-home-12-service {
