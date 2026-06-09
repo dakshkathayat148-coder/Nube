@@ -27,7 +27,7 @@ body {
 
 @media (max-width: 1024px) {
   .sec-1-services {
-    padding-top: 130px !important;
+    padding-top: 108px !important;
   }
 
   .sec-1-services .section-title.text-nowrap {
@@ -86,7 +86,7 @@ body {
   }
 
   .sec-1-services {
-    padding-top: 176px !important;
+    padding-top: 96px !important;
   }
 
   .sec-1-services .row {
@@ -94,7 +94,7 @@ body {
   }
 
   .sec-1-services .col-xxl-6.col-lg-7 {
-    padding-top: 20px !important;
+    padding-top: 56px !important;
   }
 
   .sec-1-services .section-title.text-nowrap {
@@ -211,7 +211,11 @@ body {
   }
 
   .sec-1-services {
-    padding-top: 166px !important;
+    padding-top: 88px !important;
+  }
+
+  .sec-1-services .col-xxl-6.col-lg-7 {
+    padding-top: 52px !important;
   }
 
   .sec-1-services .section-title.text-nowrap {
