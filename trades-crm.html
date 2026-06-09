@@ -237,8 +237,138 @@
   .nv-about-mission {
     padding-top: 20px;
   }
-  .at-main-menu nav ul li .submenu li {
-    display: block !important;
+  @media (max-width: 991.98px) {
+    .sec-1-services .fz-font-lg {
+      font-size: 16px !important;
+      line-height: 1.55 !important;
+      max-width: 100% !important;
+    }
+
+    .crm-inner-benefits.pt-120.pb-60 {
+      padding-top: 64px !important;
+      padding-bottom: 44px !important;
+    }
+
+    .crm-inner-benefits .text-center {
+      margin-bottom: 2rem !important;
+    }
+
+    .crm-inner-benefits h2.h3 {
+      font-size: 30px !important;
+      line-height: 1.2;
+    }
+
+    .crm-inner-benefits p.mt-3 {
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 {
+      margin-top: 0.5rem !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 > [class*="col-"] > div {
+      padding: 20px !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 h3.h6 {
+      font-size: 18px !important;
+      line-height: 1.3;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 p {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+    }
+
+    .crm-inner-cta.pt-120.pb-120 {
+      padding-top: 64px !important;
+      padding-bottom: 64px !important;
+    }
+
+    .crm-inner-cta .row.g-5 {
+      row-gap: 24px !important;
+    }
+
+    .crm-inner-cta .col-lg-7 > div {
+      height: 320px !important;
+    }
+
+    .crm-inner-cta .col-lg-5 > div {
+      padding: 28px !important;
+      border-radius: 18px !important;
+    }
+
+    .crm-inner-cta h2.h3 {
+      font-size: 30px !important;
+      line-height: 1.2;
+    }
+
+    .crm-inner-cta p {
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .crm-inner-benefits.pt-120.pb-60 {
+      padding-top: 44px !important;
+      padding-bottom: 28px !important;
+    }
+
+    .crm-inner-benefits h2.h3 {
+      font-size: 24px !important;
+    }
+
+    .crm-inner-benefits .text-center {
+      margin-bottom: 1.4rem !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 > [class*="col-"] > div {
+      padding: 16px !important;
+      border-radius: 14px !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 > [class*="col-"] > div > span {
+      width: 48px !important;
+      height: 48px !important;
+      margin-bottom: 12px !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 h3.h6 {
+      font-size: 17px !important;
+    }
+
+    .crm-inner-benefits .row.g-4.mt-3 p,
+    .crm-inner-benefits p.mt-3 {
+      font-size: 14px !important;
+    }
+
+    .crm-inner-cta.pt-120.pb-120 {
+      padding-top: 44px !important;
+      padding-bottom: 40px !important;
+    }
+
+    .crm-inner-cta .col-lg-7 > div {
+      height: 240px !important;
+      border-radius: 16px !important;
+    }
+
+    .crm-inner-cta .col-lg-5 > div {
+      padding: 18px !important;
+      border-radius: 14px !important;
+    }
+
+    .crm-inner-cta h2.h3 {
+      font-size: 24px !important;
+    }
+
+    .crm-inner-cta a.at-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 12px 18px !important;
+      margin-top: 14px !important;
+    }
   }
 </style>
                                                                                                                                    <!-- Mega menu styles -->
@@ -841,7 +971,7 @@
                     <div class="col-xxl-6 col-lg-7 pt-lg-0 pt-100">
                         <h1 class="section-title d-flex fw-600 fz-80 reveal-text mb-3 text-nowrap">Trades CRM</h1>
                         <div class="fz-font-lg reveal-text" style="line-height:1.3;color:#555;">
-                            <span style="display:inline;">CRM Solutions for Trades Professionals</span>
+                            <span style="display:inline;">CRM Solutions for Trades Professionals  </span>
                             <span style="display:inline;">Simplify job management, scheduling, and client communications.</span>
                         </div>
                     </div>
@@ -855,7 +985,7 @@
         </div>
     </div>
     <!-- Why Choose -->
-    <section class="pt-120 pb-60" style="background:#fff;">
+    <section class="crm-inner-benefits pt-120 pb-60" style="background:#fff;">
         <div class="container">
             <div class="text-center" style="margin-bottom:3.5rem;">
                 <span class="d-inline-block mb-2" style="color:var(--nv-red);font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;">Trades CRM</span>
@@ -894,7 +1024,7 @@
         </div>
     </section>
     <!-- CTA -->
-    <section class="pt-120 pb-120" style="background:#f8f8f8;">
+    <section class="crm-inner-cta pt-120 pb-120" style="background:#f8f8f8;">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7">
