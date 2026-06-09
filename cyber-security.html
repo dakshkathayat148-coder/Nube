@@ -240,6 +240,69 @@
   .at-main-menu nav ul li .submenu li {
     display: block !important;
   }
+
+  @media (max-width: 991.98px) {
+    .sec-1-services .fz-font-lg {
+      font-size: 16px !important;
+      line-height: 1.55 !important;
+      max-width: 100% !important;
+    }
+
+    .cyber-intro.pt-120.pb-60,
+    .cyber-check.pt-60.pb-80,
+    .cyber-benefits.pt-120.pb-80,
+    .cyber-services.pt-60.pb-120 {
+      padding-top: 64px !important;
+      padding-bottom: 48px !important;
+    }
+
+    .cyber-intro h2.h3,
+    .cyber-check h2.h3,
+    .cyber-benefits h2.h3,
+    .cyber-services h2.h3 {
+      font-size: 30px !important;
+      line-height: 1.2;
+    }
+
+    .cyber-intro .col-lg-6 > .rounded-4.overflow-hidden {
+      height: 280px !important;
+    }
+
+    .cyber-cta.sec-7-home-7 {
+      padding: 56px 0 !important;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .cyber-intro.pt-120.pb-60,
+    .cyber-check.pt-60.pb-80,
+    .cyber-benefits.pt-120.pb-80,
+    .cyber-services.pt-60.pb-120 {
+      padding-top: 44px !important;
+      padding-bottom: 36px !important;
+    }
+
+    .cyber-intro h2.h3,
+    .cyber-check h2.h3,
+    .cyber-benefits h2.h3,
+    .cyber-services h2.h3 {
+      font-size: 24px !important;
+    }
+
+    .cyber-intro .col-lg-6 > .rounded-4.overflow-hidden {
+      height: 220px !important;
+    }
+
+    .cyber-cta.sec-7-home-7 {
+      padding: 44px 0 !important;
+    }
+
+    .cyber-cta a.at-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 12px 18px !important;
+    }
+  }
 </style>
                                                                                                                                    <!-- Mega menu styles -->
     <style>
@@ -840,7 +903,7 @@
             <div class="row align-items-center p-relative">
                 <div class="col-xxl-6 col-lg-7 pt-lg-0 pt-100">
                     <h1 class="section-title d-flex fw-600 fz-80 reveal-text mb-3 text-nowrap">Cyber Security</h1>
-                    <div class="fz-font-lg reveal-text" style="line-height:1.3;color:#555;"><span style="display:inline;">Protect your business from evolving threats. </span><span style="display:inline;">Comprehensive security solutions for peace of mind.</span></div>
+                    <div class="fz-font-lg reveal-text" style="line-height:1.3;color:#555;">Protect your business from evolving threats. Comprehensive security solutions for peace of mind.</div>
                 </div>
                 <div class="col-xxl-6 col-lg-5 scene at_fade_anim" data-speed=".8" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
                     <div data-speed=".8">
@@ -852,7 +915,7 @@
     </div>
 </div>
     <!-- Intro Section: Strong cyber security service in Melbourne -->
-    <section class="pt-120 pb-60" style="background:#fff;">
+    <section class="cyber-intro pt-120 pb-60" style="background:#fff;">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
@@ -871,7 +934,7 @@
     </section>
     <!-- Book In A Cyber Security Check Section -->
     <style>.cyber-card { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); } .cyber-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.1) !important; }</style>
-    <section class="pt-60 pb-80" style="background:#f8f8f8;">
+    <section class="cyber-check pt-60 pb-80" style="background:#f8f8f8;">
         <div class="container">
             <div class="text-center" style="margin-bottom:3.5rem;">
                 <span class="d-inline-block mb-2" style="color:var(--nv-red);font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;">Get Protected</span>
@@ -911,7 +974,7 @@
     </section>
     <!-- Premiere solutions for Cyber Security -->
     <style>.cyber-ben-card { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); } .cyber-ben-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.1) !important; }</style>
-    <section class="pt-120 pb-80" style="background:#1D1D1D;">
+    <section class="cyber-benefits pt-120 pb-80" style="background:#1D1D1D;">
         <div class="container">
             <div class="text-center" style="margin-bottom:3.5rem;">
                 <span class="d-inline-block mb-2" style="color:var(--nv-red);font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;">Why Choose Us</span>
@@ -978,7 +1041,7 @@
     </section>
     <!-- Cyber Security Services Grid -->
     <style>.cyber-svc-card { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); } .cyber-svc-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.1) !important; }</style>
-    <section class="pt-60 pb-120" style="background:#fff;">
+    <section class="cyber-services pt-60 pb-120" style="background:#fff;">
         <div class="container">
             <div class="text-center" style="margin-bottom:3.5rem;">
                 <span class="d-inline-block mb-2" style="color:var(--nv-red);font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;">Our Services</span>
@@ -1172,7 +1235,7 @@
         </div>
     </section>
     <!-- CTA Section -->
-    <section class="sec-7-home-7 overflow-hidden" style="background:#f8f8f8;padding:80px 0;">
+    <section class="cyber-cta sec-7-home-7 overflow-hidden" style="background:#f8f8f8;padding:80px 0;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 text-center">

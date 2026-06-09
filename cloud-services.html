@@ -240,6 +240,65 @@
   .at-main-menu nav ul li .submenu li {
     display: block !important;
   }
+
+  @media (max-width: 991.98px) {
+    .sec-1-services .fz-font-lg {
+      font-size: 16px !important;
+      line-height: 1.55 !important;
+      max-width: 100% !important;
+    }
+
+    .cloud-intro.pt-120.pb-60,
+    .cloud-managed.pt-120.pb-120,
+    .cloud-services-grid.pt-120.pb-120 {
+      padding-top: 64px !important;
+      padding-bottom: 48px !important;
+    }
+
+    .cloud-intro h2.h3,
+    .cloud-managed h2.h3,
+    .cloud-services-grid h2.h3 {
+      font-size: 30px !important;
+      line-height: 1.2;
+    }
+
+    .cloud-intro .col-lg-6 > .rounded-4.overflow-hidden {
+      height: 280px !important;
+    }
+
+    .cloud-cta.sec-7-home-7 {
+      padding: 56px 0 !important;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .cloud-intro.pt-120.pb-60,
+    .cloud-managed.pt-120.pb-120,
+    .cloud-services-grid.pt-120.pb-120 {
+      padding-top: 44px !important;
+      padding-bottom: 36px !important;
+    }
+
+    .cloud-intro h2.h3,
+    .cloud-managed h2.h3,
+    .cloud-services-grid h2.h3 {
+      font-size: 24px !important;
+    }
+
+    .cloud-intro .col-lg-6 > .rounded-4.overflow-hidden {
+      height: 220px !important;
+    }
+
+    .cloud-cta.sec-7-home-7 {
+      padding: 44px 0 !important;
+    }
+
+    .cloud-cta a.at-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 12px 18px !important;
+    }
+  }
 </style>
                                                                                                                                    <!-- Mega menu styles -->
     <style>
@@ -840,7 +899,7 @@
             <div class="row align-items-center p-relative">
                 <div class="col-xxl-6 col-lg-7 pt-lg-0 pt-100">
                     <h1 class="section-title d-flex fw-600 fz-80 reveal-text mb-3">Cloud Services</h1>
-                    <div class="fz-font-lg reveal-text" style="line-height:1.3;color:#555;"><span style="display:inline;">Work smarter with cloud applications designed for success. </span><span style="display:inline;">Scalable, secure, and built for your business.</span></div>
+                    <div class="fz-font-lg reveal-text" style="line-height:1.3;color:#555;">Work smarter with cloud applications designed for success. Scalable, secure, and built for your business.</div>
                 </div>
                 <div class="col-xxl-6 col-lg-5 scene at_fade_anim" data-speed=".8" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
                     <div data-speed=".8">
@@ -853,7 +912,7 @@
 </div>
     <!-- Intro Section -->
     <style>.cld-card { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); } .cld-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.1) !important; }</style>
-    <section class="pt-120 pb-60" style="background:#fff;">
+    <section class="cloud-intro pt-120 pb-60" style="background:#fff;">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
@@ -872,7 +931,7 @@
         </div>
     </section>
     <!-- Managed Services -->
-    <section class="pt-120 pb-120 cld-mgmt-section" style="background:#f8f8f8;">
+    <section class="cloud-managed pt-120 pb-120 cld-mgmt-section" style="background:#f8f8f8;">
         <div class="container">
             <div class="text-center" style="margin-bottom:4rem;">
                 <span class="d-inline-block mb-2" style="color:var(--nv-red);font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;">Managed Services</span>
@@ -926,7 +985,7 @@
         </div>
     </section>
     <!-- Cloud Service Cards -->
-    <section class="pt-120 pb-120" style="background:#fff;">
+    <section class="cloud-services-grid pt-120 pb-120" style="background:#fff;">
         <div class="container">
             <div class="text-center" style="margin-bottom:3.5rem;">
                 <span class="d-inline-block mb-2" style="color:var(--nv-red);font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;">Our Services</span>
@@ -1036,7 +1095,7 @@
         </div>
     </section>
     <!-- CTA Section -->
-    <section class="sec-7-home-7 overflow-hidden" style="background:#f8f8f8;padding:80px 0;">
+    <section class="cloud-cta sec-7-home-7 overflow-hidden" style="background:#f8f8f8;padding:80px 0;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 text-center">
