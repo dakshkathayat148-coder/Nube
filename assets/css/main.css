@@ -158,6 +158,10 @@ li,
   display: inline !important;
 }
 
+.sec-1-services .fz-font-lg span {
+  display: inline !important;
+}
+
 .sec-1-services .fz-font-lg span + span::before {
   content: " ";
 }

@@ -16,6 +16,7 @@
 
     function initStickyCards() {
         if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+        if (window.matchMedia && window.matchMedia('(max-width: 991.98px)').matches) return;
 
         var containers = document.querySelectorAll('.sec-4-home-15__cards');
         if (!containers.length) return;

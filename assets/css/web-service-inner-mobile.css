@@ -22,6 +22,10 @@ body {
   display: inline !important;
 }
 
+.sec-1-services .fz-font-lg span {
+  display: inline !important;
+}
+
 .sec-1-services .fz-font-lg.reveal-text span + span::before {
   content: " ";
 }
