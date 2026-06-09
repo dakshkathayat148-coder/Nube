@@ -2191,7 +2191,10 @@
           if (instance && typeof instance.destroy === 'function') {
             instance.destroy();
           }
-          scene.style.pointerEvents = 'auto';
+          var staticScene = scene.cloneNode(true);
+          staticScene.removeAttribute('data-t-throwable-scene');
+          staticScene.style.pointerEvents = 'auto';
+          scene.parentNode.replaceChild(staticScene, scene);
         }
 
         if (document.readyState === 'loading') {

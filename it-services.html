@@ -391,6 +391,201 @@
       .at-megamenu.wide-megamenu .at-megamenu-box ul li a { font-size: 13px !important; padding: 8px 10px 8px 28px !important; }
     }
     </style>
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
+      .sec-6-home-11__step-inner,
+      .sec-6-home-11__step-body {
+        min-width: 0;
+      }
+
+      @media (max-width: 1024px) {
+        .sec-1-services {
+          padding-top: 120px !important;
+        }
+
+        .sec-1-services .section-title {
+          font-size: 56px;
+          line-height: 1.05;
+          white-space: normal !important;
+        }
+
+        .sec-6-home-11 {
+          padding-top: 88px !important;
+          padding-bottom: 56px !important;
+        }
+
+        .sec-6-home-11__step {
+          padding: 22px 20px !important;
+        }
+
+        .sec-6-home-11__step-head {
+          gap: 14px !important;
+          align-items: flex-start !important;
+        }
+
+        .sec-6-home-11__step-title {
+          font-size: 28px;
+          line-height: 1.2;
+        }
+
+        .sec-6-home-11__step-media img {
+          height: 240px !important;
+        }
+
+        .footer-15__tags {
+          flex-wrap: wrap !important;
+        }
+
+        .footer-15__contact-row {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 24px !important;
+        }
+
+        .footer-15__contact-row > div:last-child {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .sec-1-services {
+          padding-top: 96px !important;
+        }
+
+        .sec-1-services .row {
+          row-gap: 28px;
+        }
+
+        .sec-1-services .col-xxl-6.col-lg-7 {
+          padding-top: 0 !important;
+        }
+
+        .sec-1-services .section-title.text-nowrap {
+          font-size: 42px !important;
+          white-space: normal !important;
+        }
+
+        .sec-1-services .fz-font-lg {
+          font-size: 16px !important;
+        }
+
+        .sec-1-services .scene img {
+          width: 100%;
+          height: auto;
+        }
+
+        .sec-6-home-11__layout {
+          row-gap: 24px !important;
+        }
+
+        .sec-6-home-11__intro {
+          font-size: 15px !important;
+        }
+
+        .sec-6-home-11__step {
+          padding: 18px 16px !important;
+        }
+
+        .sec-6-home-11__step-title {
+          font-size: 24px !important;
+        }
+
+        .sec-6-home-11__step-num {
+          font-size: 26px !important;
+        }
+
+        .sec-6-home-11__step-body {
+          font-size: 15px;
+          line-height: 1.6;
+        }
+
+        .sec-6-home-11__step .at-btn {
+          width: 100%;
+          justify-content: center;
+          padding: 11px 16px !important;
+        }
+
+        .sec-6-home-11__step-media img {
+          height: 200px !important;
+        }
+
+        .footer-15__brand-icon {
+          max-width: 220px !important;
+        }
+
+        .footer-15__contact-row {
+          grid-template-columns: 1fr !important;
+          gap: 20px !important;
+        }
+
+        .footer-15__panel--contact .footer-15__contact-line {
+          font-size: 15px !important;
+        }
+
+        .footer-15__legal {
+          flex-direction: column;
+          gap: 10px;
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .at-header-area {
+          margin-left: 8px !important;
+          margin-right: 8px !important;
+        }
+
+        .at-header-logo img {
+          max-width: 90px !important;
+        }
+
+        .sec-1-services {
+          padding-top: 82px !important;
+        }
+
+        .sec-1-services .section-title.text-nowrap {
+          font-size: 34px !important;
+        }
+
+        .sec-1-services .fz-font-lg {
+          font-size: 15px !important;
+        }
+
+        .sec-6-home-11 {
+          padding-top: 72px !important;
+          padding-bottom: 44px !important;
+        }
+
+        .sec-6-home-11__step-title {
+          font-size: 22px !important;
+        }
+
+        .sec-6-home-11__step-media img {
+          height: 180px !important;
+        }
+
+        footer.footer-15 {
+          padding: 0 10px 16px 10px !important;
+        }
+
+        .footer-15__tags li {
+          flex: 1 1 calc(50% - 6px);
+          min-width: 0;
+        }
+
+        .footer-15__tags li a {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .footer-15__panel--contact address span {
+          word-break: break-word;
+        }
+      }
+    </style>
 
 </head>
 <body class="at-magic-cursor">
@@ -1217,35 +1412,51 @@
     <script src="assets/js/throwable.js"></script>
     <script src="assets/js/cursor-trail.js"></script>
     <script>
-    (function() {
+    (function () {
         if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
         var section = document.querySelector('#home-11-sec-6');
         if (!section) return;
+
         var scrollSection = section.querySelector('.scroll-section');
         var wrapper = scrollSection && scrollSection.querySelector('.wrapper');
         var items = wrapper && wrapper.querySelectorAll('.item');
         if (!items || !items.length) return;
-        items.forEach(function(item, index) {
-            gsap.set(item, { zIndex: index });
-            if (index !== 0) gsap.set(item, { yPercent: 100 });
-        });
-        var speed = +(scrollSection.dataset.scrollSpeed || 50);
-        var endPx = items.length * speed * 0.01 * scrollSection.offsetHeight;
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: section,
-                pin: true,
-                start: 'top top',
-                end: '+=' + endPx,
-                scrub: 1,
-                invalidateOnRefresh: true,
-            },
-            defaults: { ease: 'none' },
-        });
-        var last = items.length - 1;
-        items.forEach(function(item, index) {
-            if (index !== last) tl.to(item, { scale: 0.9 });
-            if (index < last) tl.to(items[index + 1], { yPercent: 0 }, '<');
+
+        var mm = gsap.matchMedia();
+
+        mm.add('(min-width: 1025px)', function () {
+            items.forEach(function (item, index) {
+                gsap.set(item, { zIndex: index, yPercent: index === 0 ? 0 : 100, scale: 1 });
+            });
+
+            var speed = +(scrollSection.dataset.scrollSpeed || 50);
+            var endPx = items.length * speed * 0.01 * scrollSection.offsetHeight;
+
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: section,
+                    pin: true,
+                    start: 'top top',
+                    end: '+=' + endPx,
+                    scrub: 1,
+                    invalidateOnRefresh: true
+                },
+                defaults: { ease: 'none' }
+            });
+
+            var last = items.length - 1;
+            items.forEach(function (item, index) {
+                if (index !== last) tl.to(item, { scale: 0.9 });
+                if (index < last) tl.to(items[index + 1], { yPercent: 0 }, '<');
+            });
+
+            return function () {
+                if (tl) tl.kill();
+                items.forEach(function (item) {
+                    gsap.set(item, { clearProps: 'zIndex,yPercent,scale' });
+                });
+            };
         });
     })();
     </script>
