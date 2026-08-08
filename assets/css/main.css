@@ -37485,33 +37485,7 @@ html[data-bs-theme=dark] .our-journey-card {
   #crmTabSection .col-md-7.p-4.p-xl-5 { padding:1.5rem !important; }
 }
 
-/* Unified Footer 15 responsiveness */
-.footer-15 {
-  padding: 56px 12px 22px 12px !important;
-}
-
-.footer-15__grid {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) !important;
-  gap: 18px !important;
-}
-
-.footer-15__panel--brand,
-.footer-15__panel--contact {
-  padding: 22px !important;
-}
-
-.footer-15__tags {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 8px !important;
-}
-
-.footer-15__contact-row {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr) !important;
-  gap: 24px !important;
-}
+/* Unified Footer 15 responsiveness (mobile/tablet only) */
 
 @media (max-width: 991.98px) {
   .footer-15 {
@@ -37519,6 +37493,7 @@ html[data-bs-theme=dark] .our-journey-card {
   }
 
   .footer-15__grid {
+    display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
     gap: 16px !important;
   }
@@ -37529,6 +37504,7 @@ html[data-bs-theme=dark] .our-journey-card {
   }
 
   .footer-15__contact-row {
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 18px !important;
   }
