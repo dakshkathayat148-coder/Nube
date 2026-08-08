@@ -7453,7 +7453,10 @@ input.footer-12__cta-input::placeholder {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--footer15-gap);
+  gap: 0;
+  background-color: var(--footer15-panel-bg);
+  border-radius: var(--footer15-panel-radius);
+  overflow: hidden;
 }
 
 .footer-15__panel {
@@ -7461,10 +7464,19 @@ input.footer-12__cta-input::placeholder {
   overflow: hidden;
   min-height: var(--footer15-panel-min-h);
   padding: var(--footer15-panel-pad);
-  background-color: var(--footer15-panel-bg);
-  border-radius: var(--footer15-panel-radius);
+  background-color: transparent;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
+}
+
+/* Trim the adjoining inner edges so the merged box reads as one panel */
+.footer-15__panel--brand {
+  padding-right: 32px;
+}
+
+.footer-15__panel--contact {
+  padding-left: 32px;
 }
 
 .footer-15__panel--nav {
@@ -37495,12 +37507,21 @@ html[data-bs-theme=dark] .our-journey-card {
   .footer-15__grid {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
-    gap: 16px !important;
+    gap: 0 !important;
   }
 
   .footer-15__panel--brand,
   .footer-15__panel--contact {
-    padding: 18px !important;
+    padding: 24px !important;
+    min-height: auto !important;
+  }
+
+  .footer-15__panel--brand {
+    padding-bottom: 8px !important;
+  }
+
+  .footer-15__panel--contact {
+    padding-top: 8px !important;
   }
 
   .footer-15__contact-row {
