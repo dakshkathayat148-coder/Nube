@@ -1,0 +1,2 @@
+# SMTP credentials for the contact form — NEVER commit real secrets
+mail-config.php

@@ -1024,7 +1024,9 @@
             <div class="col-xxl-8 col-lg-7 ms-auto pt-lg-0 pt-30">
                 <div style="background:#fff;border-radius:20px;padding:40px;box-shadow:0 4px 30px rgba(0,0,0,0.06);">
                     <div style="width:50px;height:4px;background:var(--nv-red);border-radius:4px;margin-bottom:24px;"></div>
-                    <form action="#" method="post">
+                    <form id="nvContactForm" action="send-mail.php" method="post">
+                        <!-- Honeypot spam trap (hidden from humans) -->
+                        <input type="checkbox" name="botcheck" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div style="position:relative;">
@@ -1076,7 +1078,51 @@
                                 By submitting, you agree to our <a href="#" style="color:var(--nv-red);text-decoration:none;">Terms</a> and <a href="#" style="color:var(--nv-red);text-decoration:none;">Privacy Policy</a>.
                             </p>
                         </div>
+                        <div id="nvFormResult" style="margin-top:18px;font-size:15px;font-weight:500;display:none;"></div>
                     </form>
+                    <script>
+                    (function () {
+                        var form = document.getElementById('nvContactForm');
+                        if (!form) return;
+                        var result = document.getElementById('nvFormResult');
+                        var submitBtn = form.querySelector('button[type="submit"]');
+                        var btnOriginal = submitBtn ? submitBtn.innerHTML : '';
+
+                        function showResult(message, isError) {
+                            result.style.display = 'block';
+                            result.style.color = isError ? '#d4352a' : '#1a8a3f';
+                            result.textContent = message;
+                        }
+
+                        form.addEventListener('submit', function (e) {
+                            e.preventDefault();
+
+                            if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = 'Sending...'; }
+                            showResult('Sending your message...', false);
+
+                            var formData = new FormData(form);
+                            fetch(form.getAttribute('action'), {
+                                method: 'POST',
+                                body: formData
+                            })
+                            .then(function (response) { return response.json(); })
+                            .then(function (data) {
+                                if (data.success) {
+                                    showResult('Thanks! Your message has been sent. We’ll be in touch soon.', false);
+                                    form.reset();
+                                } else {
+                                    showResult(data.message || 'Something went wrong. Please try again.', true);
+                                }
+                            })
+                            .catch(function () {
+                                showResult('Network error. Please check your connection and try again.', true);
+                            })
+                            .finally(function () {
+                                if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = btnOriginal; }
+                            });
+                        });
+                    })();
+                    </script>
                 </div>
             </div>
         </div>
