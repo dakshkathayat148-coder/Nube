@@ -37501,7 +37501,7 @@ html[data-bs-theme=dark] .our-journey-card {
 
 @media (max-width: 991.98px) {
   .footer-15 {
-    padding: 44px 10px 20px 10px !important;
+    padding: 44px 16px 20px 16px !important;
   }
 
   .footer-15__grid {
@@ -37537,7 +37537,7 @@ html[data-bs-theme=dark] .our-journey-card {
 
 @media (max-width: 575.98px) {
   .footer-15 {
-    padding: 34px 8px 16px 8px !important;
+    padding: 34px 16px 16px 16px !important;
   }
 
   .footer-15__panel--brand,
